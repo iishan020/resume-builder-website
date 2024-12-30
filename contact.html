@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactCSS.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-white">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="brand-and-toggler">
+                        <a href="index.html" class="navbar-brand">
+                            <img width="30" height="30" src="images/icons8-resume-101.png" alt=""
+                                class="navbar-brand-icon">
+                            <span class="navbar-brand-text">resume. <span>builder </span>
+                        </a>
+                        <div class="bars">
+                            <ul>
+                                <li onclick=showSidebars()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="sidebars">
+                                <li onclick=hideSidebars()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px"
+                                            viewBox="0 -960 960 960" width="40px" fill="#000000">
+                                            <path
+                                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                        </svg></a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="resume.html">Create</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="overlay"></div>
+    </header>
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="contact-title">Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us through the form below.</p>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g Rahul Sharma" required>
+
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" placeholder="e.g enteremail@gmail.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message(Not more than 100 words)"
+                    required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2024. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- <script>
+        function hideSidebars(){
+            const sidebars = document.querySelector('.sidebars')
+            sidebars.style.display = 'none'
+           }
+        function showSidebars(){
+            const sidebars = document.querySelector('.sidebars')
+            sidebars.style.display = 'flex'
+           }
+    </script> -->
+    <script src="script.js"></script>
+</body>
+   
+</html>
