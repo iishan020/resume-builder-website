@@ -1,6 +1,6 @@
 Resume Builer
 ## Demo
 
-Insert gif or link to demo
+You can view this website from the link below
 
 [Website Preview](https://sem-project.vercel.app/)
