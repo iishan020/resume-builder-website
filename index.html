@@ -22,7 +22,24 @@
                     <!-- <button type="button" class="navbar-toggler-btn"> -->
                     <div class="bars">
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
+                            <li class="hideonmobile"><a href="index.html">Home</a></li>
+                            <li class="hideonmobile"><a href="contact.html">Contact</a></li>
+                            <li class="hideonmobile"><a href="resume.html">Create</a></li>
+                            <li onclick=showSidebars()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000">
+                                <path
+                                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="sidebars">
+                            <li onclick=hideSidebars()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000">
+                                        <path
+                                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                    </svg></a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="resume.html">Create</a></li>
                         </ul>
@@ -117,7 +134,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
