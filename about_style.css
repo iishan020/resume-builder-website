@@ -316,13 +316,28 @@ h4 {
     color: var(--clr-white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .profile {
         flex-direction: column;
         text-align: center;
+        height: 400px;
+        border-radius: 25px;
+
     }
 
     .profile-img {
         margin-bottom: 1rem;
+    }
+    .bars li:hover {
+        transform: translateY(5px);
+        background-color: #dbdbdb00;
+        /* box-shadow: 0 9px 15px rgba(53, 53, 53, 0.15); */
+    }
+    body{
+        height: 170vh;
+    }
+    footer{
+        position: relative;
+        bottom: -40%;
     }
 }
